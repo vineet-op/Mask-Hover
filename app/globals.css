@@ -24,3 +24,13 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+#mask {
+  width: 100vw;
+  position: absolute;
+  mask-image: url('../public/mask.svg');
+  background: lightcoral;
+  mask-repeat: no-repeat;
+  mask-size: 40px;
+  color: #171717;
+}

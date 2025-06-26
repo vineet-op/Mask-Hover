@@ -2,15 +2,13 @@
 import { useState, useEffect } from "react"
 
 
-
 export default function MousePointer() {
-
-    const [position, setPosition] = useState({
-        x: null,
-        y: null
+    const [position, setPosition] = useState<{ x: number, y: number }>({
+        x: 0,
+        y: 0
     })
 
-    const updateMousePosition = (e: any) => {
+    const updateMousePosition = (e: MouseEvent) => {
         setPosition({ x: e.clientX, y: e.clientY })
     }
 
@@ -20,5 +18,4 @@ export default function MousePointer() {
     }, [])
 
     return position
-
 }

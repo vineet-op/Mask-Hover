@@ -28,7 +28,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Hello👋I'm <motion.span className="text-amber-500">Vineet</motion.span> a Frontend <motion.span
+          Hello👋I am <motion.span className="text-amber-500">Vineet</motion.span> a Frontend <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -54,7 +54,7 @@ export default function Home() {
 
       <motion.div
         animate={{
-          // @ts-ignore
+          // @ts-ignore-error
           webkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
           webkitMaskSize: `${size}px`
         }}
@@ -69,7 +69,7 @@ export default function Home() {
           onMouseLeave={() => isHovered(false)}
           className="relative group"
         >
-          <span className="text-amber-700">What I do ? </span> {" "}
+          <span className="text-black">What I do ? </span> {" "}
           <span className="text-white"> I craft </span>
           <span className="text-black">digital experiences</span>
           <span className="text-white">that breathe life into the web 🌟</span>
